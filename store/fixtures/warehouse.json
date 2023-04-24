@@ -1,0 +1,66 @@
+[
+  {
+    "model": "orders.warehouse",
+    "pk": 1,
+    "fields": {
+      "name": "warehouse_1"
+    }
+  },
+  {
+    "model": "orders.warehouse",
+    "pk": 2,
+    "fields": {
+      "name": "warehouse_2"
+    }
+  },
+  {
+    "model": "orders.store",
+    "pk": 1,
+    "fields": {
+      "name": "store_1"
+    }
+  },
+  {
+    "model": "orders.store",
+    "pk": 2,
+    "fields": {
+      "name": "store_2"
+    }
+  },
+  {
+    "model": "orders.token",
+    "pk": 1,
+    "fields": {
+      "linked_name": "store_1",
+      "my_name": "warehouse_1",
+      "token": "store_1_warehouse_1_token"
+    }
+  },
+  {
+    "model": "orders.token",
+    "pk": 2,
+    "fields": {
+      "linked_name": "store_1",
+      "my_name": "warehouse_2",
+      "token": "store_1_warehouse_2_token"
+    }
+  },
+  {
+    "model": "orders.token",
+    "pk": 3,
+    "fields": {
+      "linked_name": "store_2",
+      "my_name": "warehouse_1",
+      "token": "store_2_warehouse_1_token"
+    }
+  },
+  {
+    "model": "orders.token",
+    "pk": 4,
+    "fields": {
+      "linked_name": "store_1",
+      "my_name": "warehouse_2",
+      "token": "store_2_warehouse_2_token"
+    }
+  }
+]

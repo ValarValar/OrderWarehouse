@@ -1,0 +1,35 @@
+version: '3.9'
+
+services:
+  store_app:
+    container_name: store_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: make migrate_and_run_store
+    env_file:
+      - ./.env.store
+    networks:
+      - app_network
+    ports:
+      - "8000:8000"
+
+  warehouse_app:
+    container_name: warehouse_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: make migrate_and_run_warehouse
+    env_file:
+      - ./.env.warehouse
+    networks:
+      - app_network
+    ports:
+      - "8001:8001"
+
+
+
+
+networks:
+  app_network:
+
