@@ -1,5 +1,5 @@
-# OrderWarehouseWithCodeDuplication
-This version is with code duplication in 2 separate django projects/apps    
+# OrderWarehouse
+Версия без дубликации кода - 1 джанго проект, 1 джанго приложение запускается дважды с разными переменными.
 ## Setup
 docker-compose up --build -d
 ## Task
